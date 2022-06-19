@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20220619104357",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "film",
+  "fields": [
+    {
+      "fieldName": "filmName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "realisateur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "disponible",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Film",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

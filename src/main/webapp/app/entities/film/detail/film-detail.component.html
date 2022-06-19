@@ -1,0 +1,40 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="film">
+      <h2 data-cy="filmDetailsHeading"><span jhiTranslate="appliTestJhipsterApp.film.detail.title">Film</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ film.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="appliTestJhipsterApp.film.filmName">Film Name</span></dt>
+        <dd>
+          <span>{{ film.filmName }}</span>
+        </dd>
+        <dt><span jhiTranslate="appliTestJhipsterApp.film.realisateur">Realisateur</span></dt>
+        <dd>
+          <span>{{ film.realisateur }}</span>
+        </dd>
+        <dt><span jhiTranslate="appliTestJhipsterApp.film.disponible">Disponible</span></dt>
+        <dd>
+          <span>{{ film.disponible }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/film', film.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
