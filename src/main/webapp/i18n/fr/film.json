@@ -1,0 +1,26 @@
+{
+  "appliTestJhipsterApp": {
+    "film": {
+      "home": {
+        "title": "Films",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Film",
+        "createOrEditLabel": "Créer ou éditer un Film",
+        "notFound": "Aucun Film trouvé"
+      },
+      "created": "Un nouveau Film a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Film avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Film avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Film {{ id }} ?"
+      },
+      "detail": {
+        "title": "Film"
+      },
+      "id": "ID",
+      "filmName": "Film Name",
+      "realisateur": "Realisateur",
+      "disponible": "Disponible"
+    }
+  }
+}
